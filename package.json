@@ -1,0 +1,22 @@
+{
+  "name": "react-rxjs-state-management",
+  "version": "1.0.2",
+  "description": "A state management tool for React built with RXJS.",
+  "type": "module",
+  "main": "store-creator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "hello": "echo \"Hello there!\""
+  },
+  "keywords": [
+    "react",
+    "rxjs",
+    "state-management"
+  ],
+  "author": "Guillem Sardà Parreu",
+  "license": "ISC",
+  "dependencies": {
+    "react": "18.2.0",
+    "rxjs": "7.6.0"
+  }
+}
