@@ -1,6 +1,6 @@
 {
   "name": "react-rxjs-state-management",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A state management tool for React built with RXJS.",
   "type": "module",
   "main": "store-creator.js",
