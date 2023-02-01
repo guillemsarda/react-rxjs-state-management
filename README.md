@@ -2,7 +2,7 @@
 
 This is a simple npm package to create a React state management tool that uses `BehaviorSubject` from `rxjs`.
 </br>
-If you want to take a look at the source code, here is [the GitHub repo](https://github.com/guillemsarda/react-rxjs-state-management).
+If you want to check how it works, here is [a little demo](https://codesandbox.io/s/github/guillemsarda/react-state-management-with-rxjs).
 
 ## How to use it?
 
