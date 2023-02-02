@@ -1,7 +1,7 @@
 {
   "name": "react-rxjs-state-management",
   "version": "1.0.3",
-  "description": "A state management tool for React built with RXJS.",
+  "description": "A state management hook for React built with RXJS.",
   "type": "module",
   "main": "store-creator.js",
   "scripts": {
@@ -11,9 +11,15 @@
   "keywords": [
     "react",
     "rxjs",
-    "state-management"
+    "behaviorSubject",
+    "state-management",
+    "hooks"
   ],
   "author": "Guillem Sardà Parreu",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/guillemsarda/react-rxjs-state-management.git"
+  },
   "license": "ISC",
   "dependencies": {
     "react": "18.2.0",
