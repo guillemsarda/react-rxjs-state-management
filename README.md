@@ -42,7 +42,7 @@ export default function Button() {
     <>
       <button
         onClick={() => {
-          methods.counterSetter(); // (**)
+          methods.setCounter(); // (**)
         }}
       >
         Increment
@@ -54,7 +54,8 @@ export default function Button() {
 ```
 
 (*) Notice that all the states can be accessed with the name that we have given it previously.
-(**) In the same way, all the setter functions can be accessed with: given name + Setter.
+<br>
+(**) In the same way, all the setter functions can be accessed with: set + given name (i.e., in camelCase).
 
 **If you find any issues, feel free to make a PR!**
 
