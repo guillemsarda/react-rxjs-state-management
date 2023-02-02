@@ -3,6 +3,8 @@
 This is a simple npm package to create a React state management tool that uses `BehaviorSubject` from `rxjs`.
 </br>
 If you want to check how it works, here is [a little demo](https://codesandbox.io/s/github/guillemsarda/react-state-management-with-rxjs).
+<br>
+Special mention to Iskander Samatov who wrote [this great article](https://isamatov.com/react-rxjs-shared-state/) that helped me to polish some things that I was not doing properly when subscribing.
 
 ## How to use it?
 
@@ -16,7 +18,7 @@ In the `store.js` file:
 ```
 import createStore from 'react-rxjs-state-management';
 
-const counterHandler = {
+const counterHandler = { // In the section `The state handler` you can find more about it
   name: 'counter',
   defaultState: 0,
   setter: function (state, payload) {
@@ -56,6 +58,17 @@ export default function Button() {
 (*) Notice that all the states can be accessed with the name that we have given it previously.
 <br>
 (**) In the same way, all the setter functions can be accessed with: set + given name (i.e., in camelCase).
+
+## The state handler
+
+The state handler is an object that must have these 3 entries:
+- `name`: The state's name (you will use it to access its value).
+- `defaultState`: The default state of the corresponding state.
+- `setter`: The function that will handle all the state updates. **This function needs to return always the next value.** It takes two arguments:
+  - `state`: The value of the previous state.
+  - `payload`: The argument passed when the setter method is invoked.
+
+___
 
 **If you find any issues, feel free to make a PR!**
 
