@@ -63,7 +63,7 @@ export default function Button() {
 
 The state handler is an object that must have these 3 entries:
 - `name`: The state's name (you will use it to access its value).
-- `defaultState`: The default state of the corresponding state.
+- `defaultState`: The default value of the corresponding state.
 - `setter`: The function that will handle all the state updates. **This function needs to return always the next value.** It takes two arguments:
   - `state`: The value of the previous state.
   - `payload`: The argument passed when the setter method is invoked.
