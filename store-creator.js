@@ -45,7 +45,8 @@ function createStore(states = []) {
           subjectsArray[i].next(nextValue);
         };
       }
-      acc[st.name + 'Setter'] = setter(st.setter);
+      const capsFirstName = `${st.name.charAt(0).toUpperCase()}${st.name.slice(1)}`;
+      acc[`set${capsFirstName}`] = setter(st.setter);
       return acc;
     }, {});
 
