@@ -7,10 +7,10 @@ export interface State<T> {
 export interface Store {
   storeStates: { [key: string]: any };
   methods: {
-    [key: string]: (payload?: any) => void;
+    [key: string]: (payload?: any) => any;
   };
 }
 
-export function useStore();
+type useStore = () => Store;
 
-export default function createStore(states: State<any>[] = []): () => Store;
+export default function createStore(states: State<any>[] = []): useStore;

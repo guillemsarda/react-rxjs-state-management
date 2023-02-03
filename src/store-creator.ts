@@ -1,4 +1,3 @@
-// Source https://isamatov.com/react-rxjs-shared-state/
 import { useEffect, useState } from 'react';
 import { BehaviorSubject } from 'rxjs';
 import { State, Store } from '../lib';
