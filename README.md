@@ -1,6 +1,6 @@
 # react-rxjs-state-management
 
-This is a simple npm package to create a React state management tool that uses `BehaviorSubject` from `rxjs`.
+This is a simple npm package to create a React state management hook that uses `BehaviorSubject` from `rxjs`.
 </br>
 If you want to check how it works, here is [a little demo](https://codesandbox.io/s/github/guillemsarda/react-state-management-with-rxjs).
 <br>
