@@ -26,3 +26,8 @@ workflows:
           - checkout
           - run: npm install
           - run: npm run pre-push
+          - run: echo "Pre-push hook passed."
+jobs:
+  pre-push:
+    steps:
+      - run: npm run pre-push
