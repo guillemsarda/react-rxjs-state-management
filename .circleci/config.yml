@@ -19,15 +19,3 @@ workflows:
           version: '16.10'
           # If you are using yarn, change the line below from "npm" to "yarn"
           pkg-manager: npm
-      - pre-push:
-        docker:
-          - image: circleci/node:14
-        steps:
-          - checkout
-          - run: npm install
-          - run: npm run pre-push
-          - run: echo "Pre-push hook passed."
-jobs:
-  pre-push:
-    steps:
-      - run: npm run pre-push

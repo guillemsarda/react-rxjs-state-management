@@ -9,8 +9,7 @@
   ],
   "scripts": {
     "test": "jest --env=jsdom",
-    "build": "tsc",
-    "pre-push": "npm test"
+    "build": "tsc"
   },
   "keywords": [
     "react",
